@@ -35,7 +35,7 @@ class NoteController {
         title,
         note,
         mark,
-        noteDate
+        noteDate || null
       ); // Menyimpan catatan ke database
       res
         .status(201)
@@ -61,7 +61,7 @@ class NoteController {
         title,
         note,
         mark,
-        noteDate
+        noteDate || null
       );
       if (!updatedNote) {
         return res
